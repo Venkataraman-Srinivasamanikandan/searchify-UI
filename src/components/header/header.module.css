@@ -1,0 +1,56 @@
+.mainNav {
+	background-color: #1c73be;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 50px;
+	color: #fff;
+	z-index: 1000;
+}
+
+.navListContainer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navList {
+	float: left;
+	padding: 5px 20px 20px 20px;
+	cursor: pointer;
+}
+
+.navListAvatar {
+	float: left;
+	padding: 0px 20px 20px 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px 10px 10px;
+}
+
+.menuIcon {
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+.userAvatar {
+	background-color: #0a8ed3;
+	color: #0a8ed3
+}
+
+.notificationDot {
+	height: 6px;
+	width: 6px;
+	background-color: red;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	left: -11px;
+}

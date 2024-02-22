@@ -1,0 +1,43 @@
+.container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.inputbox {
+	background-color: #1c73be;
+	width: 25rem;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.searchResultContainer {
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px #ddd;
+	border-radius: 10px;
+	margin-top: 1rem;
+	max-height: 14rem;
+	overflow-y: auto;
+}
+
+.options {
+	padding: 10px 20px;
+}
+
+.options:hover {
+	background-color: #efefef;
+	cursor: pointer;
+}
+
+.noData {
+	text-align: center;
+	padding: 100px 20px;
+}
+
+.noDataContainer {
+	height: 14rem;
+}
