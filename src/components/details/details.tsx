@@ -17,9 +17,11 @@ const Details = () => {
 	useEffect(() => {
 		if (country_id === "") return navigate("/")
 		get(`attraction/${country_id}`).then((data) => {
+			console.log(data)
 			setSearchResults(data)
 		}).catch((e: any) => {
-			if (e.status === 404) {
+			console.log(e)
+			if (e?.status === 404) {
 				setSearchResults([])
 			}
 			else {

@@ -21,29 +21,17 @@ describe("Details page", () => {
 			</Router>
 		)
 	})
-	// test("Load Details page with country_id", () => {
-	// 	const mockStore = configureStore([]);
-	// 	const newInitialState = { ...initialState };
-	// 	newInitialState.country.country_id = "65d6ce26cfca75e1b7f231ea"
-	// 	const storeData = mockStore(initialState);
-	// 	jest.mock('../../../api/utils', () => ({
-	// 		...jest.requireActual('../../../api/utils'),
-	// 		get: () => {
-	// 			Promise.resolve([{
-	// 				_id: "string",
-	// 				country_id: "string",
-	// 				image: "string",
-	// 				title: "string",
-	// 				description: "string"
-	// 			}])
-	// 		}
-	// 	}))
-	// 	render(
-	// 		<Router>
-	// 			<Provider store={storeData}>
-	// 				<Details />
-	// 			</Provider>
-	// 		</Router>
-	// 	)
-	// })
+	test("Load Details page with country_id", () => {
+		const mockStore = configureStore([]);
+		const newInitialState = { ...initialState };
+		newInitialState.country.country_id = "65d6ce26cfca75e1b7f231ea"
+		const storeData = mockStore(initialState);
+		render(
+			<Router>
+				<Provider store={storeData}>
+					<Details />
+				</Provider>
+			</Router>
+		)
+	})
 })

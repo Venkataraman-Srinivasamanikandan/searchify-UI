@@ -69,6 +69,7 @@ const Home = () => {
 		<div className={styles.container}>
 			<Box>
 				<Input
+					data-testid="searchTextBox"
 					sx={{ input: { color: '#fff' } }}
 					className={styles.inputbox}
 					startAdornment={

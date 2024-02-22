@@ -1,5 +1,5 @@
 .cardContent {
-	padding: 1rem;
+	padding: 1rem 5rem 1rem 1rem;
 }
 
 .cardTitle {
@@ -8,4 +8,5 @@
 
 .image {
 	height: 11rem;
+	width: 17rem;
 }

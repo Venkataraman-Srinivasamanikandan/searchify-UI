@@ -20,5 +20,9 @@ describe("Home page", () => {
 				</Provider>
 			</Router>
 		)
+		const search = screen.getByTestId("searchTextBox").querySelector("input") as HTMLInputElement
+		fireEvent.change(search, {
+			target: { value: "sg" }
+		})
 	})
 })
